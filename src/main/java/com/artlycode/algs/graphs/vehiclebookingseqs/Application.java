@@ -26,7 +26,7 @@ public class Application {
     public static void main(String[] args) {
         try {
             List<Booking> bookings = readBookingsFromFile(
-                    args.length > 0 && args[0] != null ? args[0] : "src/main/resources/bookings2.json");
+                    args.length > 0 && args[0] != null ? args[0] : "src/main/resources/bookingordering.json");
 
             logBookings("Bookings before sorting: (n=" + bookings.size() + ")", bookings);
 
