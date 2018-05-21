@@ -3,6 +3,23 @@
 Implementation of algorithm sorting vehicle bookings in sequential order to minimize relocations of vehcle between bookings.<br><br>
 By other words, groups the arrows of a directed multi-arrow graph into a SHORTEST possible list of uninterrupted paths without repeating arrows, i.e. each arrow can be included only into one identified path.<br>
 
+Input JSON file has the following format:<br>
+
+```
+[
+  {
+    "id": 1,
+    "start": 3,
+    "end": 1
+  },
+  {
+    "id": 2,
+    "start": 1,
+    "end": 3
+  }
+]
+```
+
 ### Terminology
 **Vertex/Vertices** is a node (nodes) of a graph.<br>
 **Arrow** is a directed edge of a graph.<br>
